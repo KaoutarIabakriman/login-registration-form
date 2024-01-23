@@ -1,0 +1,180 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input, button {
+    border: none;
+     outline: none;
+}
+body,input,button {
+    font-size: 1rem;
+    font-family:"Poppins",sans-serif ;
+}
+body{
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.login {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+.img-login{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.container {
+    position: relative;
+border:2px solid white;
+margin-inline: 1.5rem;
+padding: 2.5rem 1.75rem;
+border-radius: 1.75 rem;
+backdrop-filter: blur(8px);
+
+
+}
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    
+}
+
+.container-box, .login-box{
+    display: grid;
+}
+
+.container-box {
+    row-gap: 1.55rem;
+    margin-bottom: 1.75rem;
+}
+.login-box {
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    column-gap: 0.75rem;
+    border-bottom: 2px solid white ;
+}
+.login__icon, .login__eye {
+    font-size: 1.5rem;
+}
+
+.login-input {
+    width: 100%;
+    padding-block: 0.8rem;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    z-index: 1;
+    color: white;
+}
+.login-box {
+    position: relative;
+}
+.login-label {
+    position: absolute;
+    left:28px;
+    top: -10px;
+    font-weight:600 ;
+    transition: top 0.3s, font-size 0.3s;
+}
+
+
+.login__eye{
+    position: absolute;
+    top: 18px;
+    cursor: pointer;
+    right: 0;
+    z-index: 10;
+}
+
+.login-box:nth-child(2) input {
+    padding-right: 7.8rem;
+}
+
+.check, .check-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.check {
+    margin-bottom: 1.5rem;
+}
+.check-label, .forgot, .register {
+   font-size: 1rem;
+}
+
+.check-box {
+    column-gap: 0.5rem;
+}
+
+.check-input {
+    width: 16px;
+    height: 16px;
+}
+
+.forgot {
+    color: rgb(105, 4, 4);
+    font-weight: 500;
+}
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+   font-weight: 600;
+   cursor: pointer;
+   margin-bottom: 2rem;
+   background-color:white ;
+}
+
+.register {
+    text-align: center;
+}
+.register a {
+    font-weight: 600;
+    color: white;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.login-input:focus + .login-label {
+    top: -12px;
+    font-size: 0.9rem;
+  
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .login {
+      justify-content: center;
+    }
+    .container {
+      width: 432px;
+      padding: 4rem 3rem 3.5rem;
+      border-radius: 1.5rem;
+    }
+    .title{
+      font-size: 2rem;
+    }
+  }
